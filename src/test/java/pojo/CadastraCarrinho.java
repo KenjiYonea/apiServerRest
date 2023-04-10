@@ -1,20 +1,21 @@
 package pojo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CadastraCarrinho {
     private String idProduto;
-    private String quantidade;
-    private List<String> produtos;
+    private Integer quantidade;
+    private Integer precoUnitario;
+    private List<CadastraCarrinho> produtos;
 
-    public List<String> getProdutos() {
+    public List<CadastraCarrinho> getProdutos() {
         return produtos;
     }
 
-    public void setProdutos(List<String> produtos) {
+    public void setProdutos(List<CadastraCarrinho> produtos) {
         this.produtos = produtos;
     }
-
 
     public String getIdProduto() {
         return idProduto;
@@ -24,11 +25,18 @@ public class CadastraCarrinho {
         this.idProduto = idProduto;
     }
 
-    public String getQuantidade() {
+    public Integer getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(String quantidade) {
+    public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
+    }
+    public Integer getPrecoUnitario() {
+        return precoUnitario;
+    }
+
+    public void setPrecoUnitario(Integer precoUnitario) {
+        this.precoUnitario = precoUnitario;
     }
 }
